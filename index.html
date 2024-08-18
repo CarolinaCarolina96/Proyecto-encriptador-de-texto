@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
+
+</head>
+<body>
+<div class="container">
+    <div class="encriptar">
+        <textarea 
+        name="texto" 
+        class="texto" 
+        id="texto" 
+        cols="30" 
+        rows="10" 
+        placeholder="Ingresa el texto aquí"
+        ></textarea>
+    
+    <div class="terminos">
+        <p>Solo letras minúsculas y sin acentos.</p>
+    </div>
+    <div class="botones">
+       <button class="boton-encriptar" type="button" onclick="encriptar()">
+        Encriptar
+       </button> 
+       <button class="boton-desencriptar" type="button" onclick="desencriptar()">
+        Desencriptar
+       
+        <!--
+       <button class="Borrar" type="button" onclick="Borrar()"></button>
+       Borrar
+       <button class="Copiar" type="button" onclick="Copiar()"></button>
+       Copiar
+       --> 
+
+       </button>
+    </div>
+</div>   
+
+<div class="encriptador">
+   <img src="img/Imagem.png" alt="" id="imagen"> 
+   <div class="mensaje-encriptado" id="mensaje-encriptado">
+    <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+    </div>
+</div> 
+
+<footer>
+    <p class="autor"> Realizado por Carolina para Alura Latam</p>
+</footer>
+</body>
+
+<script src="index.js"></script>
+
+</html>
